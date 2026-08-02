@@ -4,7 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: dark;
+  font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e2e8f0;
+  background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #eef2f7;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
 }

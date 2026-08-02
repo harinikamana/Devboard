@@ -1,0 +1,85 @@
+.task-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.2);
+}
+
+.task-card h3 {
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+.task-card p {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+}
+
+.task-card__top,
+.task-card__meta,
+.task-card__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.priority-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.priority-pill--high {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fda4af;
+}
+
+.priority-pill--medium {
+  background: rgba(250, 204, 21, 0.2);
+  color: #fde68a;
+}
+
+.priority-pill--low {
+  background: rgba(74, 222, 128, 0.2);
+  color: #bbf7d0;
+}
+
+.task-card__delete {
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.task-card__meta {
+  color: #94a3b8;
+  font-size: 0.84rem;
+}
+
+.task-card__id {
+  font-weight: 600;
+}
+
+.task-card__actions button {
+  border: none;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  color: #f8fafc;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+}
+
+.task-card__actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -1,14 +1,23 @@
-import "./Board.css";
-import Column from "./Column";
+import './Board.css'
+import Column from './Column'
 
-function Board() {
+function Board({ tasks, statusOrder, labels, onMoveTask, onMoveToStatus, onDeleteTask }) {
   return (
     <div className="board">
-      <Column title="Todo" className="todo"/>
-      <Column title="In Progress" className="pogress"/>
-      <Column title="Done" className="done"/>
+      {statusOrder.map((status) => (
+        <Column
+          key={status}
+          title={labels[status]}
+          status={status}
+          tasks={tasks.filter((task) => task.status === status)}
+          statusOrder={statusOrder}
+          onMoveTask={onMoveTask}
+          onMoveToStatus={onMoveToStatus}
+          onDeleteTask={onDeleteTask}
+        />
+      ))}
     </div>
-  );
+  )
 }
 
-export default Board;
+export default Board
