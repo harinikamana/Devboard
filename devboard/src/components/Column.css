@@ -1,0 +1,15 @@
+.column {
+  flex: 1;
+  background: #f4f4f4;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 450px;
+}
+
+.empty-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  color: gray;
+}

@@ -1,0 +1,12 @@
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+header p {
+  color: gray;
+}

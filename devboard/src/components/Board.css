@@ -1,0 +1,16 @@
+.board {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.todo{
+    color:#f59e0b;
+}
+
+.progress{
+    color:#2563eb;
+}
+
+.done{
+    color:#10b981;
+}
